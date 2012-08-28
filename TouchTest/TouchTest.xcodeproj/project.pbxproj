@@ -280,6 +280,7 @@
 				06474A3A15ECBC960004601D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
