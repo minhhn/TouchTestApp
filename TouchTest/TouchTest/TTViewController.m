@@ -13,6 +13,7 @@
 
 @implementation TTViewController
 @synthesize touchesListLabel;
+@synthesize clearButton;
 
 - (void)viewDidLoad
 {
@@ -24,6 +25,7 @@
 - (void)viewDidUnload
 {
     [self setTouchesListLabel:nil];
+    [self setClearButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -109,4 +111,10 @@ static NSUInteger numberOfTouches;
     }
 }
 
+- (IBAction)tappedOnClearButton:(id)sender
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.touchesListLabel.text = @"";
+    });
+}
 @end

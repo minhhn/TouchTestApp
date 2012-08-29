@@ -10,5 +10,7 @@
 
 @interface TTViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *touchesListLabel;
+@property (weak, nonatomic) IBOutlet UIButton *clearButton;
+- (IBAction)tappedOnClearButton:(id)sender;
 
 @end
